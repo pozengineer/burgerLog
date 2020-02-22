@@ -3,7 +3,15 @@
 Summary
 
 The web application is a burgerLogger application that enables the user to create a list of saved
-burgers each with a title and text. Once the notes list has been generated, the user has the
+burgers each with an:
+- id
+- title
+- button
+The application uses validation to make sure the text box is not empty, if the user trys to create
+a burger with no value, the user will be alerted and await the user to enter a value. The created
+burgers are sent to the database where they are stored and then rendered back to the html page where
+the data is displayed according to the requests made
+ and text. Once the notes list has been generated, the user has the
 options to:
 - Create and save a new note
 - Delete an unwanted note
