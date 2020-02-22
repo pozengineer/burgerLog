@@ -1,11 +1,11 @@
 {
   "name": "burgerlog",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "burger logger application",
+  "main": "",
+  "start": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "start": "^5.1.0"
   }
 }
