@@ -58,5 +58,6 @@ This application was built using:
 - Heroku: Is a platform as a service (PaaS) that enables developers to build, run,
   and operate applications in the cloud
 - HandleBars: Logicless templating language that keep the view and controller separate
+- mySql: An open-source relational database management system
 
 ![burgerLog screenShot](public/assets/images/burgerLog01.jpg)
