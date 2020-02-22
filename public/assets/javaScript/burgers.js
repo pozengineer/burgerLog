@@ -2,8 +2,7 @@
 $(function () {
     $(".change-devour").on("click", function (event) {
         var id = $(this).data("id");
-        var newDevour = $(this).data("newdevour");
-
+        console.log(id);
         var newDevourState = {
             devour: 1
         };
@@ -14,7 +13,7 @@ $(function () {
             data: newDevourState
         }).then(
             function () {
-                console.log("changed devour to", newDevour);
+                console.log("changed devour to");
                 // Reload the page to get the updated list
                 location.reload();
             }
