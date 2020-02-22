@@ -29,7 +29,7 @@ $(function () {
 
         if(userInput !== '') {
             var newBurger = {
-                burgerName: $("#ca").val().trim(),
+                burgerName: userInput.charAt(0).toUpperCase() + userInput.slice(1),
                 // devour: $("[name=devour]:checked").val().trim()
             };
              // Send the POST request.

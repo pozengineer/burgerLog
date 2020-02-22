@@ -1,13 +1,17 @@
-<div class='burgerImg col-md-4 offset-md-4'>
-    <img src="burger.png" alt="codingImage" class="img-fluid"/>
+<div class="row">
+    <div class='burgerImg col-sm-12 col-md-4'>
+        <img src="pacMan02.png" alt="codingImage" class="img-fluid"/>
+    </div>
+    <div class='burgerImg col-sm-12 col-md-4'>
+        <img src="burger.png" alt="codingImage" class="img-fluid"/>
+    </div>
 </div>
 
 <h1>Eat-Da-Burger!</h1>
 
-
 <div class="row">
     <div class="col-sm-12 col-md-6 col-lg-6">
-        <h2>Burgers that have been purchased!</h2>
+        <h2>Purchased Burgers!</h2>
         <ul>
             {{#each burgers}}
                 {{#unless devour}}
@@ -18,7 +22,7 @@
     </div>
     
     <div class="col-sm-12 col-md-6 col-lg-6">
-        <h2>Burgers that have been devoured!</h2>
+        <h2>Devoured Burgers!</h2>
         <ul>
             {{#each burgers}}
                 {{#if devour}}
@@ -35,15 +39,18 @@
 </div>
 
 <div class='row'>
-    <div class="col-sm-12 col-md-4 offset-md-4 createBurger">
-        <h2>Add a burger</h2>
+    <div class="col-sm-12 col-md-6 offset-md-3 createBurger">
+        <h2></h2>
         <form class="create-form">
             <div class="form-group">
-                <label for="ca">Burger Name:</label>
-                <input type="text" id="ca" name="burgerName">
+                {{!-- <label for="ca"></label> --}}
+                <input type="text" id="ca" name="burgerName" autocomplete="off">
             </div>
 
-            <button type="submit">Purchase Burger</button>
+            <button id='purchaseBtn' type="submit">Purchase</button>
+            <p>
+                Enter a burger you want to eat Click the 'Purchase' button
+            </p>
         </form>
     </div>   
 </div>
